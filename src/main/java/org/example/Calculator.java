@@ -5,15 +5,20 @@ import java.util.stream.DoubleStream;
 
 public class Calculator {
 
-
-        static double add(double... operands) {
-            return DoubleStream.of(operands)
-                    .sum();
+        static double add(int x, int y) {
+            return x+y;
         }
 
-        static double multiply(double... operands) {
-            return DoubleStream.of(operands)
-                    .reduce(1, (a, b) -> a * b);
+        static double sub(int x, int y){
+            return x-y;
+        }
+
+        static double mul(int x,int y){
+            return x*y;
+        }
+
+        static double div(int x, int y){
+            return x/y;
         }
 
 }
